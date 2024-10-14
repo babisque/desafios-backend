@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptography.Core", "Cryptography.Core\Cryptography.Core.csproj", "{932033CB-F1C2-4570-A415-114F69A3F461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptography.Infrastructure", "Cryptography.Infrastructure\Cryptography.Infrastructure.csproj", "{E875EE75-99A9-4BA1-BE1E-BAB0E5C41AEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cryptography.API", "Cryptography.API\Cryptography.API.csproj", "{BDFAF80C-8517-47D9-B48B-49AA90E70DC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{932033CB-F1C2-4570-A415-114F69A3F461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932033CB-F1C2-4570-A415-114F69A3F461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932033CB-F1C2-4570-A415-114F69A3F461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{932033CB-F1C2-4570-A415-114F69A3F461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E875EE75-99A9-4BA1-BE1E-BAB0E5C41AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E875EE75-99A9-4BA1-BE1E-BAB0E5C41AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E875EE75-99A9-4BA1-BE1E-BAB0E5C41AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E875EE75-99A9-4BA1-BE1E-BAB0E5C41AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDFAF80C-8517-47D9-B48B-49AA90E70DC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDFAF80C-8517-47D9-B48B-49AA90E70DC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDFAF80C-8517-47D9-B48B-49AA90E70DC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDFAF80C-8517-47D9-B48B-49AA90E70DC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
