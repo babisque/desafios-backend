@@ -1,6 +1,7 @@
 ﻿using Cryptography.API.DTOs;
 using Cryptography.Entities;
 using Cryptography.Repositories;
+using Cryptography.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cryptography.API.Controllers;
@@ -51,8 +52,8 @@ public class CryptographyController : ControllerBase
         {
             var payment = new Payment
             {
-                UserDocument = req.UserDocument,
-                CreditCardToken = req.CreditCardToken,
+                UserDocument = Convert.ToBase64String(CryptographyServices.GeneratePbkdf2Hash(req.UserDocument)),
+                CreditCardToken = Convert.ToBase64String(CryptographyServices.GeneratePbkdf2Hash(req.CreditCardToken)),
                 Value = req.Value
             };
 
@@ -87,8 +88,8 @@ public class CryptographyController : ControllerBase
         }
     }
 
-    [HttpDelete("{id:int}")]
-    public async Task<IActionResult> Delete([FromRoute] int id)
+    [HttpDelete("{id:long}")]
+    public async Task<IActionResult> Delete([FromRoute] long id)
     {
         try
         {

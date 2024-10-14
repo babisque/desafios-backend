@@ -18,7 +18,7 @@ public class PaymentRepository : IPaymentRepository
         return await _context.Payments.ToListAsync();
     }
 
-    public async Task<Payment> FindAsync(int id)
+    public async Task<Payment> FindAsync(long id)
     {
         return await _context.Payments.FindAsync(id) ?? throw new Exception("No payment found.");
     }
